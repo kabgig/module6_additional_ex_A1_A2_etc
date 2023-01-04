@@ -10,17 +10,18 @@ public class Deposit extends Account {
     }
 
     public double withdraw() {
-        if (period <= 0) {
-            double depositBalance = super.balance + (super.balance / 100 * percent);
-            super.withdraw(balance);
+        if (isPeriodExpired()) {
+            double depositBalance = (double) super.balance + ((double) super.balance / 100 * percent);
+            super.balance = 0;
             return depositBalance;
-        }
-        else return 0;
+        } else return 0;
     }
 
-    public void waitDays(int n){}
+    public void waitDays(int n) {
+        period -= n;
+    }
+
     public boolean isPeriodExpired() {
-        if (period <= 0) return true;
-        else return false;
+        return period <= 0;
     }
 }
