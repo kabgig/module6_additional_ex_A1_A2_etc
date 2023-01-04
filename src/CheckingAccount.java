@@ -1,15 +1,22 @@
-public class CheckingAccount extends Account{
+public class CheckingAccount extends Account {
+
+    int debt = 0;
 
     public CheckingAccount(int balance) {
         super(balance);
     }
 
-    public int getDebt(){
-        if (balance < 0) return balance;
-        else return 0;
+    void put(int n) {
+        super.put(n);
     }
 
-    void withdraw(int n){
-        balance -= n;
+    void withdraw(int n) {
+        debt = super.balance - n;
+        super.withdraw(n);
+    }
+
+    public int getDebt() {
+        if (debt >= 0) return 0;
+        else return debt;
     }
 }

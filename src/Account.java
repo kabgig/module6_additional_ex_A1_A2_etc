@@ -8,7 +8,8 @@ public class Account {
 
     void withdraw(int n){
         balance -= n;
-        if (balance < 0) balance = 0;
+        if (balance < 0)
+            balance = 0;
     }
 
     void put(int n){
