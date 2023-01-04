@@ -1,9 +1,9 @@
-public class Pigeon extends Bird {
+public class A10_Pigeon extends A10_Bird {
 
     int hunger;
 
-    public Pigeon(String[] continents, int population, int hunger) {
-        super("Pigeon", continents, population);
+    public A10_Pigeon(String[] continents, int population, int hunger) {
+        super("pigeon", continents, population);
         this.hunger = hunger;
     }
 
