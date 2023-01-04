@@ -1,9 +1,9 @@
-public class Deposit extends Account {
+public class A11_Deposit extends A11_Account {
 
     private int period;
     private double percent;
 
-    public Deposit(int balance, int period, double percent) {
+    public A11_Deposit(int balance, int period, double percent) {
         super(balance);
         this.period = period;
         this.percent = percent;

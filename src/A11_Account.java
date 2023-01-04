@@ -1,8 +1,8 @@
-public class Account {
+public class A11_Account {
 
     int balance;
 
-    public Account(int balance) {
+    public A11_Account(int balance) {
         this.balance = balance;
     }
 

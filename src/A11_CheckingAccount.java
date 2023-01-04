@@ -1,6 +1,6 @@
-public class CheckingAccount extends Account {
+public class A11_CheckingAccount extends A11_Account {
 
-    public CheckingAccount(int balance) {
+    public A11_CheckingAccount(int balance) {
         super(balance);
     }
 
