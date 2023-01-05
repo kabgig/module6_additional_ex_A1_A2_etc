@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Race goro = new Ork("Goro", 120, 34, true);
-        Race aragorn = new Elf("Aragorn", 140,32, true);
+        EX4_Race goro = new EX4_Ork("Goro", 120, 34, true);
+        EX4_Race aragorn = new EX4_Elf("Aragorn", 140,32, true);
 
-        Race.mortalCombat(goro, aragorn);
+        EX4_Race.mortalCombat(goro, aragorn);
     }
 }

@@ -1,14 +1,14 @@
-public class Ork extends Race{
+public class EX4_Ork extends EX4_Race {
 
-    public Ork(String name, int health, int strength, boolean isAlive) {
+    public EX4_Ork(String name, int health, int strength, boolean isAlive) {
         super(name, health, strength, isAlive);
     }
 
-    public Ork(String name, int health, int strength) {
+    public EX4_Ork(String name, int health, int strength) {
         super(name, health, strength);
     }
 
-    public Ork(int health, int strength) {
+    public EX4_Ork(int health, int strength) {
         super(health, strength);
     }
 
@@ -18,7 +18,7 @@ public class Ork extends Race{
     }
 
     @Override
-    public void attack(Race obj) {
+    public void attack(EX4_Race obj) {
         shout();
         obj.health -= super.getStrength();
         System.out.println(

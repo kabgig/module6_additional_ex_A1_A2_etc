@@ -1,23 +1,23 @@
-public class Race {
+public class EX4_Race {
     private String name;
     public int health;
     private int strength;
     private boolean isAlive;
 
-    public Race(String name, int health, int strength, boolean isAlive) {
+    public EX4_Race(String name, int health, int strength, boolean isAlive) {
         this.name = name;
         this.health = health;
         this.strength = strength;
         this.isAlive = isAlive;
     }
 
-    public Race(String name, int health, int strength) {
+    public EX4_Race(String name, int health, int strength) {
         this.name = name;
         this.health = health;
         this.strength = strength;
     }
 
-    public Race(int health, int strength) {
+    public EX4_Race(int health, int strength) {
         this.health = health;
         this.strength = strength;
     }
@@ -26,13 +26,13 @@ public class Race {
         System.out.println("uuuuu");
     }
 
-    public void attack(Race obj) {
+    public void attack(EX4_Race obj) {
         shout();
         obj.health -= this.strength;
         if (obj.health <= 0) obj.isAlive = false;
     }
 
-    public static void mortalCombat(Race obj1, Race obj2) {
+    public static void mortalCombat(EX4_Race obj1, EX4_Race obj2) {
         while (obj1.health > 0 && obj2.health > 0){
 //            obj1.health -= obj2.strength;
 //            obj2.health -= obj1.strength;
