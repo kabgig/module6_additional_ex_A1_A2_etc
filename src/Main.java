@@ -1,8 +1,19 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        EX4_Race goro = new EX4_Ork("Goro", 120, 34, true);
-        EX4_Race aragorn = new EX4_Elf("Aragorn", 140,32, true);
+        ArrayList<EX5_Employee> EX5Employees = new ArrayList<>();
 
-        EX4_Race.mortalCombat(goro, aragorn);
+        EX5Employees.add(new EX5_Employee("john", 33, "director"));
+        EX5Employees.add(new EX5_Driver("john", 33, "toyota"));
+        EX5Employees.add(new EX5_Employee("bob", 32, "vice-president"));
+
+        for (var men : EX5Employees){
+            System.out.println(
+                    men.name + " " +
+                    men.age + " "+
+                    men.position);
+        }
+        EX5_Employee.countObjects(EX5Employees);
     }
 }
