@@ -1,10 +1,10 @@
-public class Soldier {
+public class EX2_Soldier {
 
     String name;
     int price;
     String phrase;
 
-    public Soldier(String name){
+    public EX2_Soldier(String name){
         this.name = name;
         this.price = 135;
         this.phrase = "Будет исполнено";

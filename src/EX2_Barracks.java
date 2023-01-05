@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 
-public class Barracks {
+public class EX2_Barracks {
 
-    ArrayList<Soldier> home;
+    ArrayList<EX2_Soldier> home;
 
-    public Barracks() {
+    public EX2_Barracks() {
         this.home = new ArrayList<>();
     }
 
-    public void add(Soldier a) {
+    public void add(EX2_Soldier a) {
         if (home.size() > 3)
-            System.out.println("no space");
+            System.out.println("full");
         else home.add(a);
     }
 

@@ -1,12 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Barracks bar = new Barracks();
+        EX2_Barracks bar = new EX2_Barracks();
 
-        bar.add(new Soldier("Bob"));
-        bar.add(new Knight("Artur"));
-        bar.add(new Rifleman("De Artagnian"));
+        bar.add(new EX2_Soldier("Bob"));
+        bar.add(new EX2_Knight("Artur"));
+        bar.add(new EX2_Rifleman("De Artagnian"));
 
         bar.visit();
-
     }
 }
