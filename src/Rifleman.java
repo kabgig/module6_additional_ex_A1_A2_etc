@@ -8,5 +8,7 @@ public class Rifleman extends Soldier{
     }
 
     @Override
-    void attack(){}
+    public void attack() {
+        System.out.println(super.name + " атакует с оружием!");
+    }
 }

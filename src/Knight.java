@@ -5,5 +5,7 @@ public class Knight extends Soldier{
     public Knight(String name) {
         super(name);
     }
-    public void feed(){}
+    public void feed(){
+        System.out.println("Horse feeding");
+    }
 }
